@@ -8,3 +8,5 @@ https://goqr.me/api/doc/
 ```
 
 <a href="https://qrcode-gen-cleslley.vercel.app/">Visualização no Vercel</a>
+
+![qrcode](https://github.com/user-attachments/assets/6df0741c-86b6-49d7-bc87-f14afec608ea)
