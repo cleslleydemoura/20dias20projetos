@@ -27,6 +27,7 @@ function generateQR() { // Ao final do link após o '=', será adicionado o link
 <h1>DIA 2 - Gerador de Senhas</h1>
 <p> O segundo mini projeto em JavaScript é um gerador de senhas, O código além d e muito simples e funcional, entrega ao usuário uma página de fácil acesso e entendimento. As senhas geradas possuem </p>
 <a href="https://password-generator-cleslley.vercel.app/">Visualização no Vercel</a>
+<br><br>
 
 ![passwordgen](https://github.com/user-attachments/assets/f5b518a5-007d-432d-8f41-0e1ebbf3d093)
 
