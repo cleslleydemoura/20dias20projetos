@@ -71,3 +71,45 @@ eyeicon.onclick = function() {
 }
 ```
 
+<hr>
+<h1>DIA 4 - Drag & Drop</h1>
+<p> O quarto mini projeto é um Drag & Drop, que consiste em arrastar um item de um container a outro, ou mudá-lo de posição dentro do mesmo container.  </p>
+<a href="https://password-toogle-cleslley.vercel.app/">Visualização no Vercel</a>
+<br><br>
+
+![draganddrop](https://github.com/user-attachments/assets/ae4f86cd-9120-4314-9398-a58ee66f5ba9)
+
+
+
+<p>Code preview</p>
+
+```javascript
+let lists = document.getElementsByClassName("list");
+let rightBox = document.getElementById("right");
+let leftBox = document.getElementById("left");
+
+for (list of lists) {
+    list.addEventListener("dragstart", function(e){
+        let selected = e.target; // No item da lista, adicionei o drag start event (arrastar o elemento), então quando o usuário segurar o elemento para arrastá-lo, o item ficará salvo nesta variável 'let selected'.
+
+        rightBox.addEventListener("dragover", function(e){
+            e.preventDefault();
+        });
+
+        rightBox.addEventListener("drop", function(e){
+            rightBox.appendChild(selected);
+            selected = null;
+        });
+
+        leftBox.addEventListener("dragover", function(e){
+            e.preventDefault();
+        });
+
+        leftBox.addEventListener("drop", function(e){
+            leftBox.appendChild(selected);
+            selected = null;
+        });
+    })
+}
+```
+
