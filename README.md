@@ -25,7 +25,7 @@ function generateQR() { // Ao final do link após o '=', será adicionado o link
 
 <hr>
 <h1>DIA 2 - Gerador de Senhas</h1>
-<p> O segundo mini projeto em JavaScript é um gerador de senhas, O código além d e muito simples e funcional, entrega ao usuário uma página de fácil acesso e entendimento. As senhas geradas possuem </p>
+<p> O segundo mini projeto é um gerador de senhas. O site é simples e intuitivo, e o código além de fácil, fortalece alguns dos conceitos básicos do JavaScript.</p>
 <a href="https://password-generator-cleslley.vercel.app/">Visualização no Vercel</a>
 <br><br>
 
@@ -41,3 +41,33 @@ const number    = "0123456789";
 const symbol    = "!@#$%~^&*()-_|[]{}<>,./=+?"
 const allCharacter  = upperCase + lowerCase + number + symbol; /* Fazendo a junção dos caracteres. */
 ```
+
+<hr>
+<h1>DIA 3 - Ocultador de Senha</h1>
+<p> O terceiro mini projeto consiste em um ocultador de senhas. Este password toogle, tem como função esconder ou mostrar ao usuário a senha que foi digitada dentro do input. </p>
+<a href="https://password-toogle-cleslley.vercel.app/">Visualização no Vercel</a>
+<br><br>
+
+![passwordtoogle](https://github.com/user-attachments/assets/346b2ee3-fa32-4e71-b365-a673f0df674e)
+
+
+<p>Code preview</p>
+
+```javascript
+let password = document.getElementById("password");
+let eyeicon = document.getElementById("eyeicon");
+
+eyeicon.onclick = function() {
+    /* Se o input estiver como 'type=password' então ao clicar no icon ele se tornará
+       um input type text para que a senha esteja visível. Ao clicar novamente, e o input estiver
+       'type=text' ao ser clicado ele voltará a ser do type password. */
+    if(password.type == "password") {
+        password.type = "text"; // Senha visível.
+        eyeicon.src = "images/eye-open.png";
+    } else {
+        password.type = "password";
+        eyeicon.src = "images/eye-close.png";
+    }
+}
+```
+
