@@ -151,3 +151,47 @@ function createUserCard(user) {
     main.innerHTML = cardHTML
 }
 ```
+
+<hr>
+<h1>DIA 6 - Calculadora</h1>
+<p> O sexto mini projeto é uma calculadora estilizada e intuitiva.</p>
+<a href="https://calculator-cleslley.vercel.app/">Visualização no Vercel</a>
+<br><br>
+
+![calculator](https://github.com/user-attachments/assets/9810f969-b57c-444e-9efc-a9b015795e0a)
+
+
+
+<p>Code preview</p>
+
+```javascript
+calculate() {
+        let result;
+
+        const _previousOperand = parseFloat(this.previousOperand);
+        const _currentOperand = parseFloat(this.currentOperand);
+
+        if (isNaN(_previousOperand) || isNaN(_currentOperand)) return;
+
+        switch (this.operation) {
+            case "+":
+            result = _previousOperand + _currentOperand;
+            break;
+            case "-":
+            result = _previousOperand - _currentOperand;
+            break;
+            case "÷":
+            result = _previousOperand / _currentOperand;
+            break;
+            case "x":
+            result = _previousOperand * _currentOperand;
+            break;
+            default:
+                return;
+        }
+
+        this.currentOperand = result;
+        this.operation = undefined;
+        this.previousOperand = "";
+    }
+```
