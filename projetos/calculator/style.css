@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad&family=Work+Sans&display=swap');
+/* Selecionando todos os elementos HTML */
+* {
+    font-family: 'Afacad', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to bottom, #3f4b58, #3889be);
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px); /* Quatro colunas, cada uma com 100px */
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.grid-container > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    background-color: #111;
+    color: #eee;
+}
+
+.grid-container > button:hover {
+    background-color: #eee;
+    color: #111;
+}
+
+.grid-container > .operator {
+    background: #026E98;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.grid-container > .output {
+    border-radius: 20px 20px 0 0;
+    grid-column: 1 / -1; /* Diz para ele se expandir por completo nesta linha*/
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.grid-container > .output > .previous-operand {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.5rem;
+}
+
+.grid-container > .output > .current-operand {
+    color: white;
+    font-size: 2.5rem;
+}
