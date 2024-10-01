@@ -113,3 +113,41 @@ for (list of lists) {
 }
 ```
 
+<hr>
+<h1>DIA 5 - Busca de perfis do GitHub</h1>
+<p> Pesquisador de Perfis do GitHub (Github Profile Research)
+O quinto mini projeto é um pesquisador de perfis do GitHub, onde o usuário insere o nome de usuário e aparecem informações relevantes sobre o perfil, como: número de repositórios, número de seguidores e projetos fixados no perfil.
+</p>
+<a href="https://github-profile-cleslley.vercel.app/">Visualização no Vercel</a>
+<br><br>
+
+![githubprofile](https://github.com/user-attachments/assets/0762027d-2420-4a15-be1a-24e6a0381c74)
+
+
+<p>Code preview</p>
+
+```javascript
+function createUserCard(user) {
+    const userID = user.name || user.login
+    const userBio = user.bio ? `<p>${user.bio}</p>` : ''
+    const cardHTML = `
+    <div class="card">
+    <div>
+      <img src="${user.avatar_url}" alt="${user.name}" class="avatar">
+    </div>
+    <div class="user-info">
+      <h2>${userID}</h2>
+      ${userBio}
+      <ul>
+        <li>${user.followers} <strong>Followers</strong></li>
+        <li>${user.following} <strong>Following</strong></li>
+        <li>${user.public_repos} <strong>Repos</strong></li>
+      </ul>
+
+      <div id="repos"></div>
+    </div>
+  </div>
+    `
+    main.innerHTML = cardHTML
+}
+```
