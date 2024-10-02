@@ -50,7 +50,6 @@ const allCharacter  = upperCase + lowerCase + number + symbol; /* Fazendo a jun�
 
 ![passwordtoogle](https://github.com/user-attachments/assets/346b2ee3-fa32-4e71-b365-a673f0df674e)
 
-
 <p>Code preview</p>
 
 ```javascript
@@ -78,8 +77,6 @@ eyeicon.onclick = function() {
 <br><br>
 
 ![draganddrop](https://github.com/user-attachments/assets/ae4f86cd-9120-4314-9398-a58ee66f5ba9)
-
-
 
 <p>Code preview</p>
 
@@ -123,7 +120,6 @@ O quinto mini projeto é um pesquisador de perfis do GitHub, onde o usuário ins
 
 ![githubprofile](https://github.com/user-attachments/assets/0762027d-2420-4a15-be1a-24e6a0381c74)
 
-
 <p>Code preview</p>
 
 ```javascript
@@ -160,8 +156,6 @@ function createUserCard(user) {
 
 ![calculator](https://github.com/user-attachments/assets/9810f969-b57c-444e-9efc-a9b015795e0a)
 
-
-
 <p>Code preview</p>
 
 ```javascript
@@ -195,3 +189,36 @@ calculate() {
         this.previousOperand = "";
     }
 ```
+
+<hr>
+<h1>DIA 7 - Validador de Formulário</h1>
+<p> O sétimo mini projeto trata de um formulário que valida o que está sendo preenchido de acordo com as regras e limitações definidas no código.
+O usuário deve inserir suas informações, como:
+
+- ```Nome``` (nome e somente um sobrenome);
+- ```Telefone``` com um máximo de 10 caracteres;
+- ```E-mail``` válido;
+- ```Mensagem``` (Pequeno texto sobre si com no mínimo 30 caracteres).
+
+De acordo com essas regras, o formulário verifica se as informações são válidas para o cadastro do usuário ou se são inválidas.</p>
+<a href="https://form-validation-cleslley.vercel.app/">Visualização no Vercel</a>
+<br><br>
+
+![formvalidation](https://github.com/user-attachments/assets/091043c9-b5e3-4434-96ab-3e9c5fc52b18)
+
+
+<p>Code preview</p>
+
+```javascript
+var name = document.getElementById('contact-name').value;
+    // Essa variável 'name' vai guardar o conteúdo escrito no input.
+
+    if (name.length == 0) {
+        nameError.innerHTML = "Name is required";
+        // Se o input não for preenchido por pelo menos um caractere (letra), será apresentado na tela a mensagem acima.
+        return false;
+    }
+    if (!name.match(/^[A-Za-z]+\s[A-Za-z]+$/)) { // Essa expressão regular vai garantir que haja pelo menos uma letra seguida de um espaço e, em seguida, pelo menos mais uma letra até o final da string, para garantir que haja pelo menos duas palavras separadas por um espaço
+
+```
+
