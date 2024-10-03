@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad&family=Work+Sans&display=swap');
+
+* {
+  font-family: 'Afacad', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+}
+
+body {
+  margin-top: 450px;
+  background-color: #6a6b3e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
