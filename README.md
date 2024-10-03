@@ -222,3 +222,30 @@ var name = document.getElementById('contact-name').value;
 
 ```
 
+<hr>
+<h1>DIA 8 - Event KeyCodes</h1>
+<p> O oitavo mini projeto se trata de um programa que quando uma tecla é pressionada, são impressas três informações:
+
+- ```Tecla```: O valor da tecla pressionada (se for espaço, imprime "Space").
+- ```KeyCode```: O código numérico associado à tecla pressionada.
+- ```Code```: O código da tecla, que é mais específico para o layout do teclado.
+</p>
+
+<a href="https://event-keycodes-cleslley.vercel.app/">Visualização no Vercel</a>
+<br><br>
+
+![eventkeycodes](https://github.com/user-attachments/assets/99c80ee8-efeb-4781-a4db-7cf06fdebcc4)
+
+<p>Code preview</p>
+
+```javascript
+const insert = document.getElementById('insert')
+
+window.addEventListener('keydown', (event) => {
+  insert.innerHTML = `
+  <div class="key">
+  ${event.key === ' ' ? 'Space' : event.key} 
+  <small>event.key</small>
+</div>
+```
+
