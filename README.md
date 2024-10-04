@@ -1,6 +1,6 @@
 <h1>20 Dias, 20 projetos</h1>
 <hr><hr>
-<p> Esse projeto está sendo feito com o intuíto de ampliar meus conhescimentos em javaScript. São 20 mini projetos feitos com HTML, CSS e JavaScript. Cada um com uma funcionalidade diferente.
+<p> Esse projeto está sendo feito com o intuíto de ampliar meus conhecimentos em javaScript. São 20 mini projetos feitos com HTML, CSS e JavaScript. Cada um com uma funcionalidade diferente.
 Todos os projetos aqui também estão sendo publicados no meu <a href="https://www.linkedin.com/in/cleslley/">Linkedin</a> diariamente. Aceito sugestões de projetos!</p>
 
 <p align="center">
@@ -261,8 +261,10 @@ window.addEventListener('keydown', (event) => {
 
 <hr>
 <h1>DIA 9 - Calculadora de IMC</h1>
-<p> O nono mini projeto é uma calculadora de IMC (Índice de Massa Corporal). Este programa realiza um cálculo com base na altura e peso informados, permitindo determinar se o peso está adequado para a estatura definida pelo usuário. Ao final, o programa exibe o valor do IMC e classifica a condição em uma das seguintes categorias:
-abaixo do peso, peso ideal ou acima do peso.
+<p> O nono mini projeto é uma calculadora de IMC (Índice de Massa Corporal). Este programa realiza um cálculo com base na altura e peso informados, permitindo determinar se o peso está adequado para a estatura definida pelo usuário.
+  Ao final, o programa exibe o valor do IMC e classifica a condição em uma das seguintes categorias: 
+  
+```abaixo do peso```, ```peso ideal``` ou ```acima do peso```.
 </p>
 
 <a href="https://bmi-calculator-cleslley.vercel.app/">Visualização no Vercel</a>
