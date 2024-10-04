@@ -1,6 +1,6 @@
 <h1>20 Dias, 20 projetos</h1>
 <hr><hr>
-<p> Esse projeto está sendo feito com o intuíto de ampliar meus conhecimentos em javaScript. São 20 mini projetos feitos com HTML, CSS e JavaScript. Cada um com uma funcionalidade diferente.
+<p> Esse projeto está sendo feito com o intuito de ampliar meus conhecimentos em JavaScript. São 20 mini projetos feitos com HTML, CSS e JavaScript. Cada um com uma funcionalidade diferente.
 Todos os projetos aqui também estão sendo publicados no meu <a href="https://www.linkedin.com/in/cleslley/">Linkedin</a> diariamente. Aceito sugestões de projetos!</p>
 
 <p align="center">
