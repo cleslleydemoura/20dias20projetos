@@ -1,5 +1,15 @@
-<h1>DIA 1 - Gerador de QR Code</h1>
+<h1>20 Dias, 20 projetos</h1>
 <hr><hr>
+<p> Esse projeto está sendo feito com o intuíto de ampliar meus conhescimentos em javaScript. São 20 mini projetos feitos com HTML, CSS e JavaScript. Cada um com uma funcionalidade diferente.
+Todos os projetos aqui também estão sendo publicados no meu <a href="https://www.linkedin.com/in/cleslley/">Linkedin</a> diariamente. Aceito sugestões de projetos!</p>
+
+<p align="center">
+  <a href="#">
+    <img src="https://skillicons.dev/icons?i=git,javascript,html,css"/>
+  </a>
+</p>
+<hr>
+<h1>DIA 1 - Gerador de QR Code</h1>
 <p> Como projeto introdutório, foi feito um gerador de QR Code. A partir de uma API o programa cria as imagens que criam acesso para o link desejado.</p>
 <p>Link da API</p>
 
@@ -220,5 +230,32 @@ var name = document.getElementById('contact-name').value;
     }
     if (!name.match(/^[A-Za-z]+\s[A-Za-z]+$/)) { // Essa expressão regular vai garantir que haja pelo menos uma letra seguida de um espaço e, em seguida, pelo menos mais uma letra até o final da string, para garantir que haja pelo menos duas palavras separadas por um espaço
 
+```
+
+<hr>
+<h1>DIA 8 - Event KeyCodes</h1>
+<p> O oitavo mini projeto se trata de um programa que quando uma tecla é pressionada, são impressas três informações:
+
+- ```Tecla```: O valor da tecla pressionada (se for espaço, imprime "Space").
+- ```KeyCode```: O código numérico associado à tecla pressionada.
+- ```Code```: O código da tecla, que é mais específico para o layout do teclado.
+</p>
+
+<a href="https://event-keycodes-cleslley.vercel.app/">Visualização no Vercel</a>
+<br><br>
+
+![eventkeycodes](https://github.com/user-attachments/assets/99c80ee8-efeb-4781-a4db-7cf06fdebcc4)
+
+<p>Code preview</p>
+
+```javascript
+const insert = document.getElementById('insert')
+
+window.addEventListener('keydown', (event) => {
+  insert.innerHTML = `
+  <div class="key">
+  ${event.key === ' ' ? 'Space' : event.key} 
+  <small>event.key</small>
+</div>
 ```
 
