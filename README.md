@@ -259,3 +259,27 @@ window.addEventListener('keydown', (event) => {
 </div>
 ```
 
+<hr>
+<h1>DIA 9 - Calculadora de IMC</h1>
+<p> O nono mini projeto é uma calculadora de IMC (Índice de Massa Corporal). Este programa realiza um cálculo com base na altura e peso informados, permitindo determinar se o peso está adequado para a estatura definida pelo usuário. Ao final, o programa exibe o valor do IMC e classifica a condição em uma das seguintes categorias:
+abaixo do peso, peso ideal ou acima do peso.
+</p>
+
+<a href="https://bmi-calculator-cleslley.vercel.app/">Visualização no Vercel</a>
+<br><br>
+
+![bmicalculator](https://github.com/user-attachments/assets/7a60670c-118b-4929-b699-7dae5d092dce)
+
+
+<p>Code preview</p>
+
+```javascript
+if (valorIMC < 18.5) {
+            classificacao = 'underweight.';
+        } else if (valorIMC >= 18.5 && valorIMC <= 25) {
+            classificacao = 'with the ideal weight.';
+        } else if (valorIMC > 25) {
+            classificacao = 'overweight.';
+        }
+        resultado.textContent = `Your BMI is ${valorIMC} and you are ${classificacao}`;
+```
