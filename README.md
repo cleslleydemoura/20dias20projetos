@@ -285,3 +285,25 @@ if (valorIMC < 18.5) {
         }
         resultado.textContent = `Your BMI is ${valorIMC} and you are ${classificacao}`;
 ```
+
+<hr>
+<h1>DIA 10 - Hoverboard</h1>
+<p> O décimo mini projeto é um Hoverboard, que apresenta um programa no qual os elementos mudam de cor ao passar o mouse sobre eles.</p>
+
+<a href="https://hoverboard-cleslley.vercel.app/">Visualização no Vercel</a>
+<br><br>
+
+![hoverboard](https://github.com/user-attachments/assets/38250b50-4a45-4f0c-9d25-e2fa6fc57608)
+
+<p>Code preview</p>
+
+```javascript
+for (let i = 0; i < squares; i++) {
+    const square = document.createElement('div');
+    square.classList.add('square');
+    square.addEventListener('mouseover', () => setColor(square));
+    square.addEventListener('mouseout', () => removeColor(square));
+    container.appendChild(square);
+}
+```
+
