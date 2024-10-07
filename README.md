@@ -24,11 +24,11 @@ https://goqr.me/api/doc/
 <p>Code preview</p>
 
 ```javascript
-let imgBox = document.getElementById("imgBox"); // Div do QR.
-let qrImage = document.getElementById("qrImage"); // O QR que será gerado.
-let qrText = document.getElementById("qrText"); // Nos dá o valor escrito no input.
+let imgBox = document.getElementById("imgBox");
+let qrImage = document.getElementById("qrImage");
+let qrText = document.getElementById("qrText");
 
-function generateQR() { // Ao final do link após o '=', será adicionado o link/texto digitado pelo usuário.
+function generateQR() {
     qrImage.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + qrText.value;
 }
 ```
@@ -44,7 +44,6 @@ function generateQR() { // Ao final do link após o '=', será adicionado o link
 <p>Code preview</p>
 
 ```javascript
-/* Nesta parte do código é apresentado os tipos de caracteres que serão usados na hora de gerar a senha. */
 const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerCase = "abcdefghijklmnopqrstuvwxyz";
 const number    = "0123456789";
@@ -67,11 +66,8 @@ let password = document.getElementById("password");
 let eyeicon = document.getElementById("eyeicon");
 
 eyeicon.onclick = function() {
-    /* Se o input estiver como 'type=password' então ao clicar no icon ele se tornará
-       um input type text para que a senha esteja visível. Ao clicar novamente, e o input estiver
-       'type=text' ao ser clicado ele voltará a ser do type password. */
     if(password.type == "password") {
-        password.type = "text"; // Senha visível.
+        password.type = "text";
         eyeicon.src = "images/eye-open.png";
     } else {
         password.type = "password";
@@ -97,21 +93,18 @@ let leftBox = document.getElementById("left");
 
 for (list of lists) {
     list.addEventListener("dragstart", function(e){
-        let selected = e.target; // No item da lista, adicionei o drag start event (arrastar o elemento), então quando o usuário segurar o elemento para arrastá-lo, o item ficará salvo nesta variável 'let selected'.
+        let selected = e.target;
 
         rightBox.addEventListener("dragover", function(e){
             e.preventDefault();
         });
-
         rightBox.addEventListener("drop", function(e){
             rightBox.appendChild(selected);
             selected = null;
         });
-
         leftBox.addEventListener("dragover", function(e){
             e.preventDefault();
         });
-
         leftBox.addEventListener("drop", function(e){
             leftBox.appendChild(selected);
             selected = null;
@@ -174,9 +167,7 @@ calculate() {
 
         const _previousOperand = parseFloat(this.previousOperand);
         const _currentOperand = parseFloat(this.currentOperand);
-
         if (isNaN(_previousOperand) || isNaN(_currentOperand)) return;
-
         switch (this.operation) {
             case "+":
             result = _previousOperand + _currentOperand;
@@ -221,14 +212,11 @@ De acordo com essas regras, o formulário verifica se as informações são vál
 
 ```javascript
 var name = document.getElementById('contact-name').value;
-    // Essa variável 'name' vai guardar o conteúdo escrito no input.
-
     if (name.length == 0) {
         nameError.innerHTML = "Name is required";
-        // Se o input não for preenchido por pelo menos um caractere (letra), será apresentado na tela a mensagem acima.
         return false;
     }
-    if (!name.match(/^[A-Za-z]+\s[A-Za-z]+$/)) { // Essa expressão regular vai garantir que haja pelo menos uma letra seguida de um espaço e, em seguida, pelo menos mais uma letra até o final da string, para garantir que haja pelo menos duas palavras separadas por um espaço
+    if (!name.match(/^[A-Za-z]+\s[A-Za-z]+$/)) {
 
 ```
 
@@ -250,7 +238,6 @@ var name = document.getElementById('contact-name').value;
 
 ```javascript
 const insert = document.getElementById('insert')
-
 window.addEventListener('keydown', (event) => {
   insert.innerHTML = `
   <div class="key">
@@ -307,3 +294,44 @@ for (let i = 0; i < squares; i++) {
 }
 ```
 
+<hr>
+<h1>DIA 11 - Botão de mudança de cor (onclick) </h1>
+<p> O décimo primeiro mini projeto é um Switch Color, que consiste em um botão que modifica o fundo da página.
+Este é o prjeto mais simples até então, e decidi colocálo aqui exatamente por isso, para deixar um exemplo mais simples e claro de como se usa a função onclick.</p>
+
+<a href="https://hoverboard-cleslley.vercel.app/">Visualização no Vercel</a>
+<br><br>
+
+![switchcolor](https://github.com/user-attachments/assets/a992f7b2-070d-48b0-8531-e9b100ae98f9)
+
+<p>Code preview</p>
+
+```javascript
+function changeColors() {
+    var colors = ["#FF6767", "#FF9767", "#FFF667", "#A3FF67", "#67FFEF", "#6793FF", "#9C67FF", "#FA67FF"];
+    document.getElementsByTagName("body")[0].style.background = colors[index++];
+    if (index > colors.length - 1) {
+        index = 0;
+    }
+}
+```
+
+<hr>
+<h1>DIA 12 - To-do List</h1>
+<p> Com uma interface simples, você pode adicionar, editar e marcar tarefas como concluídas em um clique.</p>
+<br><br>
+
+![todolist](https://github.com/user-attachments/assets/1fb90ae8-18fe-491d-83fa-072939426500)
+
+<p>Code preview</p>
+
+```javascript
+editForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const editInputValue = editInput.value;
+    if (editInputValue) {
+        updateTodo(editInputValue);
+    }
+    toggleForms();
+});
+```
