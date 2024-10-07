@@ -315,3 +315,23 @@ function changeColors() {
     }
 }
 ```
+
+<hr>
+<h1>DIA 12 - To-do List</h1>
+<p> Com uma interface simples, você pode adicionar, editar e marcar tarefas como concluídas em um clique.</p>
+<br><br>
+
+![todolist](https://github.com/user-attachments/assets/1fb90ae8-18fe-491d-83fa-072939426500)
+
+<p>Code preview</p>
+
+```javascript
+editForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const editInputValue = editInput.value;
+    if (editInputValue) {
+        updateTodo(editInputValue);
+    }
+    toggleForms();
+});
+```
