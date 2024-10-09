@@ -319,6 +319,7 @@ function changeColors() {
 <hr>
 <h1>DIA 12 - To-do List</h1>
 <p> O décimo segundo mini projeto é uma lista de afazeres. Com uma interface simples, você pode adicionar, editar e marcar tarefas como concluídas em um clique.</p>
+<a href="https://todolist-cleslley.vercel.app/">Visualização no Vercel</a>
 <br><br>
 
 ![todolist](https://github.com/user-attachments/assets/1fb90ae8-18fe-491d-83fa-072939426500)
@@ -339,6 +340,7 @@ editForm.addEventListener("submit", (e) => {
 <hr>
 <h1>DIA 13 - Relógio de Ponteiro</h1>
 <p> O décimo terceiro mini projeto é um relógio de ponteiro. Feito com JavaScript, o programa exibe na tela um relógio de ponteiro sincronizado com o horário oficial de Brasília.</p>
+<a href="https://pointer-clock-cleslley.vercel.app/">Visualização no Vercel</a>
 <br><br>
 
 ![pointerclock](https://github.com/user-attachments/assets/f4fdcbed-4978-49d5-8828-0986b4d9e552)
@@ -359,6 +361,7 @@ const setRotation = (element, rotationPercentage) => {
 <p>Link da Webservice API:</p>
 
 ```https://viacep.com.br/```
+<a href="https://cep-finder-cleslley.vercel.app/">Visualização no Vercel</a>
 <br>
 
 ![cepfinder](https://github.com/user-attachments/assets/c883b8f3-6d05-4f15-b0fb-c359792912d6)
