@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad&family=Work+Sans&display=swap');
+
+body {
+    background-color: #ececec17;
+    text-align: center;
+    font-family: 'Afacad', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search {
+    background-color: #f1f1f1;
+    box-shadow: 0 10px 10px 0 #5761531c,
+      0 0px 40px #0000001a;
+    border-radius: 20px;
+    height: 450px;
+    width: 350px;
+}
+
+
+input {
+    background-color: #ebebeb;
+    color: black;
+    box-shadow: 0 5px 10px #969cb80d,
+      0 15px 40px #0000001a;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #000000ce;
+    cursor: pointer;
+    color: #fff;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    box-shadow: 0 5px 10px #969cb80d,
+      0 15px 40px #0000001a;
+}
+
+button:hover {
+    background-color: #59a157;
+    transition: all 250ms;
+}
+
+.result {
+    margin-left: 54px;
+    padding: 20px;
+    background-color: #000000ce;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 10px 10px 0 #5761531c,
+      0 0px 40px #0000001a;
+}
