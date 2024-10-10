@@ -319,6 +319,7 @@ function changeColors() {
 <hr>
 <h1>DIA 12 - To-do List</h1>
 <p> O décimo segundo mini projeto é uma lista de afazeres. Com uma interface simples, você pode adicionar, editar e marcar tarefas como concluídas em um clique.</p>
+<a href="https://todolist-cleslley.vercel.app/">Visualização no Vercel</a>
 <br><br>
 
 ![todolist](https://github.com/user-attachments/assets/1fb90ae8-18fe-491d-83fa-072939426500)
@@ -339,6 +340,7 @@ editForm.addEventListener("submit", (e) => {
 <hr>
 <h1>DIA 13 - Relógio de Ponteiro</h1>
 <p> O décimo terceiro mini projeto é um relógio de ponteiro. Feito com JavaScript, o programa exibe na tela um relógio de ponteiro sincronizado com o horário oficial de Brasília.</p>
+<a href="https://pointer-clock-cleslley.vercel.app/">Visualização no Vercel</a>
 <br><br>
 
 ![pointerclock](https://github.com/user-attachments/assets/f4fdcbed-4978-49d5-8828-0986b4d9e552)
@@ -349,4 +351,28 @@ editForm.addEventListener("submit", (e) => {
 const setRotation = (element, rotationPercentage) => {
     element.style.setProperty('--rotation', rotationPercentage * 360);
 }
+```
+
+<hr>
+<h1>DIA 14 - Pesquisa de Endeereço via CEP</h1>
+<p> O décimo quarto mini projeto consiste em um buscador de CEP que utiliza O webservice da ViaCEP que por sua vez utiliza os dados de uma API. Os dados são extraídos dentro do código JavaScript e são mostrados ao usuário na tela, de forma estilizada e organizada.</p>
+<br>
+<p>This mini project consists of a Brazilian address research engine (that uses CEP for the search), that uses ViaCEP's webservice that also uses data from an API. The data is used within the JavaScript code and is shown to the user on the screen, in a stylized and organized way.</p>
+<p>Link da Webservice API:</p>
+
+```https://viacep.com.br/```
+<br>
+<a href="https://cep-finder-cleslley.vercel.app/">Visualização no Vercel</a>
+<br>
+
+![cepfinder](https://github.com/user-attachments/assets/c883b8f3-6d05-4f15-b0fb-c359792912d6)
+
+
+<p>Code preview</p>
+
+```javascript
+let campoTexto = document.getElementById("cep").value;
+    const ajax = new XMLHttpRequest();
+    ajax.open('GET','https://viacep.com.br/ws/'+ campoTexto +'/json/');
+    ajax.send();
 ```
