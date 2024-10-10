@@ -376,3 +376,24 @@ let campoTexto = document.getElementById("cep").value;
     ajax.open('GET','https://viacep.com.br/ws/'+ campoTexto +'/json/');
     ajax.send();
 ```
+
+<hr>
+<h1>DIA 15 - App de Desenhos</h1>
+<p> O usuário tem a opção de escolher as cores e calibre da ferramenta para desenhar, criando várias possibilidades e explorando sua própria criatividade.</p>
+<a href="https://dwawing-app-cleslley.vercel.app/">Visualização no Vercel</a>
+<br><br>
+
+![drawingapp](https://github.com/user-attachments/assets/6e432307-317c-4608-a1e2-2e62a8396b9c)
+
+<p>Code preview</p>
+
+```javascript
+toolbar.addEventListener('change', e => {
+    if (e.target.id === 'stroke') {
+        ctx.strokeStyle = e.target.value;
+    }
+    if (e.target.id === 'lineWidth') {
+        lineWidth = e.target.value;
+    }
+});
+```
