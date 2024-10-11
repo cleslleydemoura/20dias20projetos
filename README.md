@@ -397,3 +397,24 @@ toolbar.addEventListener('change', e => {
     }
 });
 ```
+
+<hr>
+<h1>DIA 16 - Roleta Giratória</h1>
+<p> O programa consiste em uma roleta, na qual, quanto mais o usuário clicar no botão "girar", mais rápido a roleta gira, selecionando aleatoriamente o campo que será "sorteado".</p>
+<a href="https://spinning-wheel-cleslley.vercel.app/">Visualização no Vercel</a>
+<br><br>
+
+![spinningwheel](https://github.com/user-attachments/assets/5349aaca-6d03-4301-9796-50cff013ffbb)
+
+<p>Code preview</p>
+
+```javascript
+let container = document.querySelector(".container");
+let btn = document.getElementById("girar");
+let number = Math.ceil(Math.random() * 1000);
+
+btn.onclick = function() {
+    container.style.transform = "rotate(" + number + "deg)";
+    number += Math.ceil(Math.random() * 1000);
+}
+```
