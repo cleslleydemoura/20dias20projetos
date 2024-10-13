@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter (BRL to USD)</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Converter Moeda</h1>
+        <form onsubmit="return false;">
+            <div class="input-container">
+                <p>Quantia em Real (BRL):</p>
+                <input type="number" class="quantia" required>
+            </div>
+
+            <button type="submit">CONVERTER</button>
+            <p>Valor em Dólar (USD):</p>
+            <div class="result"></div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
