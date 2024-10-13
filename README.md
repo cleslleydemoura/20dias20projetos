@@ -418,3 +418,27 @@ btn.onclick = function() {
     number += Math.ceil(Math.random() * 1000);
 }
 ```
+
+<hr>
+<h1>DIA 17 - Carrossel de imagens</h1>
+<p> O código de hoje é um Carrossel de imagens. Um projeto dinâmico e simples que traz alguns conceitos básicos do JavaScript.</p>
+<a href="https://image-carousel-cleslley.vercel.app/">Visualização no Vercel</a>
+<br><br>
+
+![imagecarousel](https://github.com/user-attachments/assets/55b2407e-cde0-4c64-93be-402cb218c860)
+
+<p>Code preview</p>
+
+```javascript
+rightBtn.addEventListener('click', () => {
+    idx++
+    changeImage()
+    resetInterval()
+})
+
+leftBtn.addEventListener('click', () => {
+    idx--
+    changeImage()
+    resetInterval()
+})
+```
