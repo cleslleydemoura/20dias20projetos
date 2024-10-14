@@ -442,3 +442,32 @@ leftBtn.addEventListener('click', () => {
     resetInterval()
 })
 ```
+
+<hr>
+<h1>DIA 18 - Conversor de Moeda</h1>
+<p> O código de hoje é um conversor de moedas que converte Real (BRL) para Dólar (USD).</p>
+<p> O programa utiliza uma API que fornece o valor mais alto do dólar no dia e armazena esse valor no script do site. Assim, ele realiza a conversão da quantia selecionada pelo usuário, exibindo o resultado em dólares.</p>
+<p>Link da API: </p>
+
+```https://docs.awesomeapi.com.br/api-de-moedas```
+
+<a href="https://currency-converter-cleslley.vercel.app/">Visualização no Vercel</a>
+<br><br>
+
+![currencyconverter](https://github.com/user-attachments/assets/b80fe742-6524-4e99-b5f0-257a3c7a1b1d)
+
+<p>Code preview</p>
+
+```javascript
+async function converterMoeda() {
+    let valorDolar = await obterCotacaoDolar();
+
+    if (valorDolar) {
+        let valorBRL = parseFloat(quantia.value);
+        let valorConversao = valorBRL * valorDolar;
+        resultado.textContent = valorConversao.toFixed(2);
+    } else {
+        resultado.textContent = "Erro ao tentar obter a cotação do dia.";
+    }
+}
+```
