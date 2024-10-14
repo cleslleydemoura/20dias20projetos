@@ -471,3 +471,25 @@ async function converterMoeda() {
     }
 }
 ```
+
+<hr>
+<h1>DIA 19 - Localização de Usuário</h1>
+<p> O código busca a localização do usuário e atualiza a página com as coordenadas obtidas a partir da API de geolocalização do navegador. Se a localização não puder ser acessada, uma mensagem de erro é exibida.</p>
+
+<a href="https://get-location-cleslley.vercel.app/">Visualização no Vercel</a>
+<br><br>
+
+![getlocation](https://github.com/user-attachments/assets/af6d0352-e87a-42a2-bf6f-d619e333378e)
+
+<p>Code preview</p>
+
+```javascript
+function success(pos) {
+    const latitude = pos.coords.latitude;
+    const longitude = pos.coords.longitude;
+    console.log(pos.coords.latitude);
+
+    let location = document.getElementById("localizacao").innerHTML = `Latitude: ${pos.coords.latitude},
+    <br>Longitude: ${pos.coords.longitude}`;
+}
+```
