@@ -479,7 +479,7 @@ async function converterMoeda() {
 <a href="https://get-location-cleslley.vercel.app/">Visualização no Vercel</a>
 <br><br>
 
-![getlocation](https://github.com/user-attachments/assets/af6d0352-e87a-42a2-bf6f-d619e333378e)
+![getlocation](https://github.com/user-attachments/assets/6f2c5201-420a-4593-905c-db8075c47208)
 
 <p>Code preview</p>
 
