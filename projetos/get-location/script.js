@@ -10,7 +10,8 @@ function success(pos) { // pos ---> abreviação de position.
     let location = document.getElementById("localizacao").innerHTML = `Latitude: ${pos.coords.latitude},
     <br>Longitude: ${pos.coords.longitude}`;
 }
-
+// TOda vex que a tentativa de localizar o usuário NÃO for bem sucedida,
+// então essa função é procecssada.
 function error(error) {
     let location = document.getElementById("localizacao").innerHTML = "Não foi possível encontrar sua localização. Permita que o site utilize sua localização."
 }
