@@ -493,3 +493,27 @@ function success(pos) {
     <br>Longitude: ${pos.coords.longitude}`;
 }
 ```
+
+<hr>
+<h1>DIA 20 - Get User IP</h1>
+<p> Este código é uma "evolução" do código anterior, do dia 19. Agora, além de mostrar ao usuário suas coordenadas, o código também exibe informações importantes, como:</p>
+
+```IP```, ```País de Acesso```, ```Cidade``` e ```Provedora de Internet```
+
+<p> Para que o código funcione corretamente, o usuário deve baixá-lo e abrir o arquivo em sua máquina local.</p>
+<br>
+
+![dia20](https://github.com/user-attachments/assets/91cc690f-651b-478f-91ba-1fb2cae760c5)
+
+<p>Code preview</p>
+
+```javascript
+fetch('http://ip-api.com/json/?fields=61439')
+  .then(res => res.json())
+  .then(res => {console.log(res);
+
+    ip.textContent = res.query;
+    country.textContent = res.country;
+    city.textContent = res.city;
+    empresa.textContent = res.org;
+```
