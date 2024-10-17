@@ -1,14 +1,19 @@
 <h1>20 Dias, 20 projetos</h1>
 <hr><hr>
-<p> Esse projeto está sendo feito com o intuito de ampliar meus conhecimentos em JavaScript. São 20 mini projetos feitos com HTML, CSS e JavaScript. Cada um com uma funcionalidade diferente.
-Todos os projetos aqui também estão sendo publicados no meu <a href="https://www.linkedin.com/in/cleslley/">Linkedin</a> diariamente. Aceito sugestões de projetos!</p>
+
+```Esse projeto está sendo feito com o intuito de ampliar meus conhecimentos em JavaScript. São 20 mini projetos feitos com HTML, CSS e JavaScript. Cada um com uma funcionalidade diferente.```
+
+```Todos os projetos aqui também estão sendo publicados no meu Linkedin diariamente. Aceito sugestões de projetos!```
+<p>Link do <a href="https://www.linkedin.com/in/cleslley/">Linkedin</a></p>
 
 <p align="center">
   <a href="#">
     <img src="https://skillicons.dev/icons?i=git,javascript,html,css"/>
   </a>
 </p>
-<hr>
+
+<hr><hr>
+
 <h1>DIA 1 - Gerador de QR Code</h1>
 <p> Como projeto introdutório, foi feito um gerador de QR Code. A partir de uma API o programa cria as imagens que criam acesso para o link desejado.</p>
 <p>Link da API</p>
